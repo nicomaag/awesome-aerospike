@@ -1,8 +1,8 @@
 # Awesome Aerospike [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of clients, tools, connectors and learning material for [Aerospike](https://aerospike.com), the distributed NoSQL database built for predictable sub-millisecond access at scale.
+> Distributed NoSQL database built for predictable sub-millisecond access at scale.
 
-Aerospike keeps its index in memory and its data on flash, which is how it serves millions of operations per second from a cluster small enough to reason about. That design shows up everywhere in its tooling: the cluster is self-managing, the operational surface is unusually small, and most of what you need is a handful of very good command-line tools.
+[Aerospike](https://aerospike.com) keeps its index in memory and its data on flash, which is how it serves millions of operations per second from a cluster small enough to reason about. That design shows up everywhere in its tooling: the cluster is self-managing, the operational surface is unusually small, and most of what you need is a handful of very good command-line tools.
 
 This list collects what actually exists around it — the official clients, the community ones, the operational tooling, and the places to learn.
 
@@ -44,11 +44,9 @@ This list collects what actually exists around it — the official clients, the 
 - [Lua](https://github.com/aerospike-community/client-lua) - Community client, separate from the server-side Lua UDF support.
 - [Node.js](https://github.com/aerospike/aerospike-client-nodejs) - Official Node.js client, a native addon over the C client.
 - [PHP 8](https://github.com/aerospike/php-client) - Current official PHP client, written in Rust.
-- [PHP 7](https://github.com/aerospike-community/aerospike-client-php) - Community client for the PHP 7 series.
 - [Python](https://github.com/aerospike/aerospike-client-python) - Official Python client.
 - [Ruby](https://github.com/aerospike-community/aerospike-client-ruby) - Community-maintained pure Ruby client.
 - [Rust](https://github.com/aerospike/aerospike-client-rust) - Official Rust client.
-- [Scala](https://github.com/Tinkoff/aerospike-scala) - Typesafe DSL over the Java client.
 - [JDBC](https://github.com/aerospike/aerospike-jdbc) - Minimalist JDBC driver, enough for SQL-shaped tooling.
 
 ## Object Mappers and Framework Integrations
@@ -100,7 +98,6 @@ This list collects what actually exists around it — the official clients, the 
 - [Kubernetes Operator](https://github.com/aerospike/aerospike-kubernetes-operator) - The supported way to run a cluster on Kubernetes.
 - [Helm Charts](https://github.com/aerospike/aerospike-kubernetes) - Charts for the server and the surrounding services.
 - [Management Library](https://github.com/aerospike/aerospike-management-lib) - The operations library the operator is built on.
-- [travelaudience Operator](https://github.com/travelaudience/aerospike-operator) - An independent operator, predating the official one.
 
 ### Containers and Provisioning
 
@@ -115,7 +112,6 @@ This list collects what actually exists around it — the official clients, the 
 
 - [Prometheus Exporter](https://github.com/aerospike/aerospike-prometheus-exporter) - The official exporter for server and namespace metrics.
 - [Monitoring Stack](https://github.com/aerospike/aerospike-monitoring) - Grafana dashboards and alert rules to go with it.
-- [asprom](https://github.com/alicebob/asprom) - An independent Prometheus exporter, smaller in scope.
 - [Graphite Integration](https://github.com/aerospike-community/aerospike-graphite) - Ships metrics to Graphite.
 - [collectd Plugin](https://github.com/aerospike-community/aerospike-collectd) - Metrics through collectd.
 - [Nagios Integration](https://github.com/aerospike-community/aerospike-nagios) - Checks for Nagios-based monitoring.
@@ -127,7 +123,6 @@ This list collects what actually exists around it — the official clients, the 
 - [Aerospike Graph](https://github.com/aerospike/aerospike-graph-service) - Apache TinkerPop-compliant graph database on top of Aerospike.
 - [Graph Examples](https://github.com/aerospike/aerospike-graph) - Scripts and notebooks for getting started with Graph.
 - [JanusGraph Backend](https://github.com/PlaytikaOSS/aerospike-janusgraph-storage-backend) - Aerospike as a JanusGraph storage backend.
-- [Spark Connector](https://github.com/sasha-polev/aerospark) - Community Spark connector, an alternative to the supported one.
 - [Hadoop Connector](https://github.com/aerospike-community/aerospike-hadoop) - Reads and writes Aerospike data from MapReduce jobs.
 - [Storm Connectors](https://github.com/aerospike-community/storm-aerospike) - Spouts and bolts for Apache Storm.
 - [Trino Image](https://github.com/aerospike/trino-aerospike.docker) - Trino packaged with the Aerospike connector.
@@ -144,3 +139,10 @@ This list collects what actually exists around it — the official clients, the 
 ## Contributing
 
 Contributions are welcome. Read the [contribution guidelines](contributing.md) first.
+
+## Footnotes
+
+Five entries that were on this list are archived or have not been touched in
+years. They are in [unmaintained.md](unmaintained.md) rather than deleted:
+several are still the only thing of their kind, and knowing that something
+exists but is abandoned beats not finding it at all.
